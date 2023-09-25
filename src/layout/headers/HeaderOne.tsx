@@ -1,8 +1,9 @@
 'use client'
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react"; 
 import NavMenu from "./Menu/nav-menu";
-import LogoHomeOne from "@/svg/logo/LogoHomeOne";
+import LogoHome from "@/svg/logo/logo.png";
 import OffcanvasArea from "@/components/common/OffcanvasArea";
 import useSticky from "@/hooks/use-sticky";
 
@@ -24,7 +25,7 @@ const HeaderOne = () => {
 										<div className="tplogo__area">
 											<Link href="/">
 												<span>
-													<LogoHomeOne />
+													<Image src={LogoHome} />
 												</span>
 											</Link>
 										</div>
