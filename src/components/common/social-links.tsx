@@ -10,24 +10,34 @@ interface social_links_type {
 
 const social_links: social_links_type[] = [
   {
-    link: "http://facebook.com",
+    link: "https://www.facebook.com/improvedigitally",
     target: "_blank",
     icon: "fab fa-facebook-f", 
   },
   {
-    link: "http://twitter.com",
+    link: "https://twitter.com/improvedigi",
     target: "_blank",
     icon: "fab fa-twitter",
   },
   {
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/company/improvedigitally/",
     target: "_blank",
     icon: "fab fa-linkedin-in", 
   }, 
   {
-    link: "https://www.vimeo.com",
+    link: "https://pinterest.com/improvedigitally/",
     target: "_blank",
-    icon: "fab fa-vimeo-v", 
+    icon: "fab fa-pinterest", 
+  },
+  {
+    link: "https://www.instagram.com/improvedigitally/",
+    target: "_blank",
+    icon: "fab fa-instagram", 
+  },
+  {
+    link: "https://www.youtube.com/channel/UCzyiIoSgeEwb_hd1MeXQj4g",
+    target: "_blank",
+    icon: "fab fa-youtube", 
   },
 ];
 
@@ -146,8 +156,8 @@ type copy_right_text_type =  {
 }
 
 const copy_right_text: copy_right_text_type = {
-  copy_right: <> ©{new Date().getFullYear()} Copyrights by company. All Rights Reserved. Designed by 
-                  <Link target="_blank" href="https://themeforest.net/user/theme_pure/portfolio"> Theme_Pure. </Link> 
+  copy_right: <>  Copyright © 2022 Improve Digitally
+                  <Link target="_blank" href="https://themeforest.net/user/theme_pure/portfolio"> Improve Digitally. </Link> 
               </>,
 }
 

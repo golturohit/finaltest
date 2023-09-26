@@ -1,5 +1,6 @@
 import Link from "next/link";
-import SeomyLogo from "@/svg/seomy_logo";
+import Image from "next/image";
+import Logo from "@/svg/logo/logo.png";
 import SubscribeForm from "@/components/forms/SubscribeForm";
 import SocialLinks, { CopyRight } from "@/components/common/social-links";
 
@@ -18,31 +19,41 @@ interface footer_content_type {
 }
 
 const footer_content: footer_content_type = {
-  footer_info: <> This SEO is most reputed <br /> firm which provides various <br /> online marketing </>,
+  footer_info: <> Jamia Nagar, Okhla<br /> South Delhi, Delhi <br /> Pin-110025 </>,
   newsletter: "Our conversation is just getting started",
   footer_links: [
     {
       id: 1,
-      title: "Information",
+      title: "Services",
       links: [
-        { title: "Home", link: "/" },
-        { title: "About Us", link: "/about" },
-        { title: "Project", link: "/project" },
-        { title: "Plan & Pricing", link: "/price" },
-        { title: "Blog", link: "/blog" },
-        { title: "Contact Us", link: "/contact" },
+        { title: "Digital Marketing", link: "/" },
+        { title: "Web Developement", link: "/about" },
+        { title: "SEO Services", link: "/project" },
+        { title: "UI/UX Design", link: "/price" },
+        { title: "Copywriting", link: "/blog" },
+        { title: "Google Aids", link: "/contact" },
       ],
     },
     {
       id: 2,
-      title: "Services",
+      title: "Resourses",
       links: [
-        { title: "SEO Audit", link: "#" },
-        { title: "SEO Services", link: "#" },
-        { title: "SEO Marketing", link: "#" },
-        { title: "SEO Analysis", link: "#" },
-        { title: "SEO Optimization", link: "#" },
-        { title: "Social Media", link: "#" },
+        { title: "Case Studies", link: "#" },
+        { title: "Consulting Services", link: "#" },
+        { title: "Testimonials", link: "#" },
+        { title: "FAQ", link: "#" },
+        { title: "Blog", link: "#" },
+      ],
+    },
+    {
+      id: 3,
+      title: "Company",
+      links: [
+        { title: "About Us", link: "#" },
+        { title: "Portfolio", link: "#" },
+        { title: "Partner with Us", link: "#" },
+        { title: "Career", link: "#" },
+        { title: "Contact Us", link: "#" },
       ],
     },
   ],
@@ -60,9 +71,9 @@ const FooterOne = () => {
                 <div className="col-lg-3 col-md-6">
                   <div className="footer-widget footer-col-1 mb-40">
                     <div className="footer-widget-logo mb-20">
-                      <Link href="/">
-                        <SeomyLogo />
-                      </Link>
+                      
+                        <Image src={Logo} />
+                      
                     </div>
                     <div className="footer-widget-content">
                       <p className="footer-widget-text mb-20">{footer_info}</p>
@@ -74,7 +85,7 @@ const FooterOne = () => {
                   </div>
                 </div>
                 {footer_links.map((item, i) => (
-                  <div key={i} className="col-lg-3 col-md-6">
+                  <div key={i} className="col-lg-2 col-md-6">
                     <div className="footer-widget footer-col-2 mb-40">
                       <h4 className="footer-widget-title mb-15">
                         {item.title}

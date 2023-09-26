@@ -30,14 +30,14 @@ const HeaderOne = () => {
 											</Link>
 										</div>
 									</div>
-									<div className="col-xxl-8 col-xl-7 col-lg-7 d-none d-xl-block">
+									<div className="col-xxl-8 col-xl-8 col-lg-7 d-none d-xl-block">
 										<div className="tpmenu__area main-mega-menu text-center">
 											<nav className="tp-main-menu-content">
 												<NavMenu />
 											</nav>
 										</div>
 									</div>
-									<div className="col-xxl-2 col-xl-3 col-lg-6 col-6">
+									<div className="col-xxl-2 col-xl-2 col-lg-6 col-6">
 										<div className="tpheader__right d-flex align-items-center justify-content-end">
 											<div className="search-btn-wrap">
 												<button className={`button-search-toggle ${openSearch ? "tp-search-icon-active" : ""}`}
