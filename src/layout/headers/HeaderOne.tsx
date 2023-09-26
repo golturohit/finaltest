@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import NavMenu from "./Menu/nav-menu";
 import LogoHome from "@/svg/logo/logo.png";
 import OffcanvasArea from "@/components/common/OffcanvasArea";
@@ -9,8 +8,6 @@ import useSticky from "@/hooks/use-sticky";
 
 const HeaderOne = () => {
   const { sticky } = useSticky();
-  const [openCanvas, setOpenCanvas] = useState(false);
-  const [openSearch, setOpenSearch] = useState(false);
 
   return (
     <>
