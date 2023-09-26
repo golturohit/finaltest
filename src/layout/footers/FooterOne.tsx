@@ -19,7 +19,13 @@ interface footer_content_type {
 }
 
 const footer_content: footer_content_type = {
-  footer_info: <> Jamia Nagar, Okhla<br /> South Delhi, Delhi <br /> Pin-110025 </>,
+  footer_info: (
+    <>
+      {" "}
+      Jamia Nagar, Okhla
+      <br /> South Delhi, Delhi <br /> Pin-110025{" "}
+    </>
+  ),
   newsletter: "Our conversation is just getting started",
   footer_links: [
     {
@@ -71,9 +77,7 @@ const FooterOne = () => {
                 <div className="col-lg-3 col-md-6">
                   <div className="footer-widget footer-col-1 mb-40">
                     <div className="footer-widget-logo mb-20">
-                      
-                        <Image src={Logo} alt={""} />
-                      
+                      <Image src={Logo} alt={""} />
                     </div>
                     <div className="footer-widget-content">
                       <p className="footer-widget-text mb-20">{footer_info}</p>
@@ -117,8 +121,8 @@ const FooterOne = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="footer-widget-copyright text-center">
-                    <span> 
-                      <CopyRight /> 
+                    <span>
+                      <CopyRight />
                     </span>
                   </div>
                 </div>
