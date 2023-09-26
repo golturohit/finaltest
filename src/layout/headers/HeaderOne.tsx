@@ -25,7 +25,7 @@ const HeaderOne = () => {
 										<div className="tplogo__area">
 											<Link href="/">
 												<span>
-													<Image src={LogoHome} />
+													<Image src={LogoHome} alt={""}/>
 												</span>
 											</Link>
 										</div>

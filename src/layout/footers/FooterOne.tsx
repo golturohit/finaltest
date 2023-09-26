@@ -72,7 +72,7 @@ const FooterOne = () => {
                   <div className="footer-widget footer-col-1 mb-40">
                     <div className="footer-widget-logo mb-20">
                       
-                        <Image src={Logo} />
+                        <Image src={Logo} alt={""} />
                       
                     </div>
                     <div className="footer-widget-content">
