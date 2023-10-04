@@ -18,8 +18,8 @@ interface choose_content_type {
     sm_des: string;
     choose_features: {
         id: number;
+        icon: StaticImageData;
         title: string;
-        des: string;
     }[];
 }
 // choose content 
@@ -31,33 +31,23 @@ const choose_content: choose_content_type = {
     choose_features: [
         {
             id: 1,
-            des: "Increase in Website Organic Traffic",
-            title: "10X"
+            icon: choose_icno_1,
+            title: "We make comprehensive strategies that make businesses unique from competitors."
         },
         {
             id: 2,
-            des: "Increase in Quality Conversions",
-            title: "5X"
+            icon: choose_icno_2,
+            title: "Our expert team dominate the market with conversions by using excellent strategy for businesses."
         },
         {
             id: 3,
-            des: "Growth on Social Media",
-            title: "45%"
+            icon: choose_icno_3,
+            title: "Our team live and breath for achieving our clients' vision and are fully committed to elevating business to new heights."
         },
         {
             id: 4,
-            des: "Quality Conversions Through Social Media",
-            title: "33%"
-        },
-        {
-            id: 5,
-            des: "Increase in Conversions Through Email",
-            title: "18X"
-        },
-        {
-            id: 6,
-            des: "Higher Conversion for Local Business",
-            title: "50%"
+            icon: choose_icno_3,
+            title: "We offer fully integrated and data-centric approach for businesses to grow and establish digitally."
         }
     ],
 }
@@ -71,22 +61,6 @@ const ChooseAreaHomeOne = () => {
             <section className="choose-area tpchoose-bottom pb-80">
                 <div className="container">
                     <div className="row align-items-center">
-                    <div className="col-xl-6 col-lg-5">
-                        <div className="tpchoose-thumb mt-30 p-relative mb-50">
-                            <Image className="tpchoose-border-anim" src={choose_banner} alt="theme-pure" />
-                            <div className="tpchoose-shape">
-                                <div className="tpchoose-shape-one d-none d-md-block">
-                                    <Image src={choose_shape_1} alt="theme-pure" />
-                                </div>
-                                <div className="tpchoose-shape-two">
-                                    <Image src={choose_shape_2} alt="theme-pure" />
-                                </div>
-                                <div className="tpchoose-shape-three">
-                                    <Image src={choose_shape_3} alt="theme-pure" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div className="col-xl-6 col-lg-7">
                         <div className="tpchoose-wrapper mb-30">
                             <div className="tpsection__content mb-50">
@@ -99,21 +73,38 @@ const ChooseAreaHomeOne = () => {
                             </div>
                             <div className="row gx-6">
                                 {choose_features.map((item, i) => 
-                                     <div key={i} className="col-lg-4 col-md-4 col-sm-6">
-                                            
-                                            <div className="tpchoose-text">
-                                                <span className="tpchoose-title">{item.title}</span>    
-                                            </div>
+                                     <div key={i} className="col-lg-6 col-md-6 col-sm-12">
+                                        
                                             <div className="tpchoose-icon mb-25">
-                                                <span>{item.des}</span>
+                                                <span><Image src={item.icon} alt="theme-pure" /></span>
+                                            </div>
+                                            <div className="tpchoose-text">
+                                                <span className="tpchoose-title">{item.title}</span>
+                                                
                                             </div>
                                         
                                     </div> 
                                 )}
                                 <div className="tpheader__btn ml-25 d-none d-sm-block">
                                     <Link href="/contact" className="tp-header-btn">
-                                    Get free Consultation
+                                    Get a Quote
                                     </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-5">
+                        <div className="tpchoose-thumb mt-30 p-relative mb-50">
+                            <Image className="tpchoose-border-anim" src={choose_banner} alt="theme-pure" />
+                            <div className="tpchoose-shape">
+                                <div className="tpchoose-shape-one d-none d-md-block">
+                                    <Image src={choose_shape_1} alt="theme-pure" />
+                                </div>
+                                <div className="tpchoose-shape-two">
+                                    <Image src={choose_shape_2} alt="theme-pure" />
+                                </div>
+                                <div className="tpchoose-shape-three">
+                                    <Image src={choose_shape_3} alt="theme-pure" />
                                 </div>
                             </div>
                         </div>

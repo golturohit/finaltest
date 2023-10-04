@@ -50,13 +50,13 @@ const ServicesAreaHomeOne = () => {
                             <Image src={item.img} alt="theme-pure" />
                           </div>
                           <div className="tpservices-content">
-                            <span>{item.category}</span>
-                            <h4 className="tpservices-title">
+                            <h4>{item.category}</h4>
+                            <span className="tpservices-title">
                               <Link
                                 href="/seo-audit"
                                 dangerouslySetInnerHTML={{ __html: item.title }}
                               ></Link>
-                            </h4>
+                            </span>
                           </div>
                         </div>
                       </li>

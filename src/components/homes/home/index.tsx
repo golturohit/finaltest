@@ -7,6 +7,8 @@ import BannerHomeOne from "./BannerHomeOne";
 import BlogAreaHomeOne from "./BlogAreaHomeOne";
 import CaseAreaHomeOne from "./CaseAreaHomeOne";
 import ChooseAreaHomeOne from "./ChooseAreaHomeOne";
+import ChooseAreaHomeOne1 from "./ChooseAreaHomeOne1";
+import ChooseAreaHomeOne2 from "./ChooseAreaHomeOne2";
 import ContactAreaHomeOne from "./ContactAreaHomeOne";
 import FunfactAreaHomeOne from "./FunfactAreaHomeOne";
 import PricingAreaHomeOne from "./PricingAreaHomeOne";
@@ -21,16 +23,18 @@ const HomeOne = () => {
       <HeaderOne />
       <main className="overflow-hidden">
         <BannerHomeOne />
-        <ProcessAreaHomeOne />
-        <AnalysisAreaHomeOne />
-        <CaseAreaHomeOne />
-        <ServicesAreaHomeOne />
-        <FunfactAreaHomeOne />
+        {/*<ProcessAreaHomeOne />*/}
+        {/*<AnalysisAreaHomeOne />*/}
         <ChooseAreaHomeOne />
-        <PricingAreaHomeOne />
-        <TestimonialAreaHomeOne />
+        <ChooseAreaHomeOne2 />
+        <ServicesAreaHomeOne />
+        {/*<FunfactAreaHomeOne />*/}
+        {/*<PricingAreaHomeOne />*/}
+        <CaseAreaHomeOne />
+        <ChooseAreaHomeOne1 />
         <BlogAreaHomeOne />
-        <ContactAreaHomeOne />
+        {/*<ContactAreaHomeOne />*/}
+        <TestimonialAreaHomeOne />
       </main>
       <FooterOne />
     </Wrapper>
